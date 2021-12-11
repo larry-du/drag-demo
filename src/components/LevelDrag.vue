@@ -2,6 +2,7 @@
   <draggable
     v-model="dragData"
     tag="transition-group"
+    chosenClass="chose"
     :component-data="{ tag: 'div', name: 'flip-list', class: 'levelBox' }"
     itemKey="name"
   >
@@ -47,6 +48,10 @@ export default {
 .item {
   border: 1px solid;
   flex: 1 0 0;
+  
+}
+.chose {
+  background-color: lightblue;
 }
 .flip-list-move {
   transition: transform 0.5s;

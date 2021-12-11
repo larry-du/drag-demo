@@ -56,4 +56,9 @@ export default {
   width: 80%;
   margin: 0 auto;
 }
+
+.title {
+  background-color: rgb(74, 33, 223);
+  color: #fff;
+}
 </style>
