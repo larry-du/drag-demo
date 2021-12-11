@@ -32,12 +32,16 @@ export default {
     levelDrag,
     verticalDrag,
   },
+  computed: {},
   methods: {
     updateSecondList(id, event) {
-      const allData = [...this.$store.getters.menuList];
+      const allData = this.deepCopy(this.$store.getters.menuList);
       const menuIndex = allData.findIndex((data) => data.id === id);
       allData[menuIndex].children = event;
       this.$store.commit("menuList", allData);
+    },
+    deepCopy(copyData) {
+      return JSON.parse(JSON.stringify(copyData));
     },
   },
 };

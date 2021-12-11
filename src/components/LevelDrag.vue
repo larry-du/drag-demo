@@ -48,7 +48,6 @@ export default {
 .item {
   border: 1px solid;
   flex: 1 0 0;
-  
 }
 .chose {
   background-color: lightblue;
